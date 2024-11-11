@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+import project_register from "/public/project_register.png";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
 
       <div>
       <h2 className="default-font nunito-semibold">Test</h2>
-        <img src="./public/project_register.png"></img>
+        <img src={project_register}></img>
       </div>
     </>
   );
