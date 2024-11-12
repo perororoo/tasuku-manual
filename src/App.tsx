@@ -1,5 +1,5 @@
 import './App.css';
-import project_register from "/public/project_register.png";
+import MiniDiscord from './MiniDiscord.tsx'
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
       </div>
 
       <div>
-      <h2 className="default-font nunito-semibold">Test</h2>
-        <img src={project_register}></img>
+        <h2 className="default-font nunito-semibold">Test</h2>
+        <MiniDiscord />
       </div>
     </>
   );
