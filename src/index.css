@@ -1,9 +1,8 @@
 :root {
+  padding: 10%;
   place-content: center;
   line-height: 1.5;
   margin-top: 2em;
-  margin-left: 5%;
-  margin-right: 5%;
 
   color-scheme: light dark;
   background-color: #ede8d0;
@@ -36,8 +35,5 @@
 }
 
 body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
+  display: block;
 }
