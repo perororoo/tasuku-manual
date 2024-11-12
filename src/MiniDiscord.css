@@ -5,7 +5,7 @@ div.cmdContainer {
   border-color: #a19d89;
   border-radius: 0.7em;
   padding: 0.7em;
-  min-width: 300px;
+  min-width: 0;
   height: 1.5em;
   align-content: center;
 }
