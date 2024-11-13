@@ -5,18 +5,19 @@ function App() {
   return (
     <>
       <div>
-        <h1 className="default-font nunito-semibold">Who is Tasuku?</h1>
-        <p className="default-font nunito-normal">Hello o// !!! My name is Pingu, and I’m the current guildmaster of the Art Guild (Aishin)!! Tasuku is a Discord bot made by me (@peroroo) and Koi (@ryokune) as a bot originally made to help with stuff within the GDA Office.</p>
+        <h1 className="default-font nunito-semibold">Tasuku Manual</h1>
+        <div className="simpleTextBlock">  
+          <p className="default-font nunito-normal">Hello Welcome!! o//</p>
+          <p className="default-font nunito-normal">Tasuku is a Discord bot made by Pingu (@peroroo) and Koi (@ryokune) as a bot made to help with stuff within the GDA Office!!</p>
+          <p className="default-font nunito-normal">Here below is the list of bot commands Tasuku (v1.0.0) can do. Bot commands are split up into 2 categories; <u><strong>Global Commands</strong></u> and <u><strong>Guild Commands</strong></u>.</p>
+        </div>
       </div>
 
       <div>
-        <h1 className="default-font nunito-semibold">What can we do with the bot?</h1>
-        <p className="default-font nunito-normal">Discord Bot commands!! Here below is the list of current bot commands (v1.0.0) and their functions. The bot’s commands are split up into 2 categories; <u><strong>Global Commands</strong></u> and <u><strong>Guild Commands</strong></u>.</p>
-      </div>
-
-      <div>
-        <h2 className="default-font nunito-semibold">Test</h2>
-        <MiniDiscord />
+        <h2 className="default-font nunito-semibold">Global Commands</h2>
+          <div className="simpleTextBlock">
+            <MiniDiscord commandName="/project register" fields={["guild"]} />
+          </div>
       </div>
     </>
   );
