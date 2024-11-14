@@ -45,6 +45,7 @@ function App() {
       <div>
         <h2 className="default-font nunito-semibold">Global Commands</h2>
           {GlobalCommands.map((command, index) => (
+            // @ts-expect-error:next-line
             <div className="commandListBlock" key={command}>
               <a onClick={() => {
                 setElementIndex(index)
@@ -56,9 +57,12 @@ function App() {
                 />
               </a>
               <div className={ elementIndex === index ? "commandInfoContainer" : "hidden"}>
-                <MiniDiscord commandName="/project register" fields={command[2]} />
+              {// @ts-expect-error:next-line
+                <MiniDiscord commandName="/project register" fields={command[2]} /> 
+              }
               </div>
             </div>
+
           ))};
 
           
