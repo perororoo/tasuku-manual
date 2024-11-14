@@ -2,12 +2,29 @@
   text-align: left;
 }
 
+a {
+  cursor: pointer;
+}
+
 .default-font {
   color: #4f4d46;
 }
 
 div.simpleTextBlock {
   margin-inline: 2em;
+}
+
+div.commandInfoContainer {
+  margin-inline: 3em;
+  padding: 0.5em;
+}
+
+div.commandListBlock {
+  margin: 0.5em;
+}
+
+div.hidden {
+  display: none;
 }
 
 .open-sans-normal {

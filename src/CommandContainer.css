@@ -1,0 +1,44 @@
+div.commandDropdown {
+  align-content: center;
+  border-color: #d0ccb8;
+  border-width: 2.5px;
+  border-style: solid;
+  border-radius: 1em;
+  display: flex;
+  padding: 0.5em;
+}
+
+div.commandDropdown:hover {
+  background-color: #d0ccb8;
+}
+
+div.commandDropdown:active {
+  background-color: #bdb9a5;
+  border-color: #bdb9a5;
+}
+
+div.dropdownIcon {
+  align-content: center;
+  border-radius: 100%;
+  display: flex;
+  width: 2em;
+  height: 2em;
+}
+
+h3.commandName {
+  align-self: center;
+  font-size: 100%;
+  margin: 0;
+  padding-inline: 0.7em;
+}
+
+p.commandDesc {
+  align-self: center;
+  margin: 0;
+}
+
+svg {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
