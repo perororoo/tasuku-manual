@@ -42,3 +42,11 @@ svg {
   margin-left: auto;
   margin-right: auto;
 }
+
+svg.closed {
+  transform: rotate(-90deg);
+}
+
+svg.opened {
+  transform: rotate(0deg);
+}

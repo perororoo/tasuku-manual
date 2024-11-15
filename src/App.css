@@ -15,8 +15,8 @@ div.simpleTextBlock {
 }
 
 div.commandInfoContainer {
-  margin-inline: 3em;
-  padding: 0.5em;
+  margin-inline: 1.5em;
+  padding-block: 0.5em;
 }
 
 div.commandListBlock {
@@ -27,12 +27,12 @@ div.hidden {
   display: none;
 }
 
-.open-sans-normal {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+.gg-sans-normal {
+  font-family: "gg sans Normal", sans-serif;
+}
+
+.gg-sans-semibold {
+  font-family: "gg sans Semibold", sans-serif;
 }
 
 .nunito-normal {

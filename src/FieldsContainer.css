@@ -1,0 +1,43 @@
+button.fieldButton {
+  background-color: #d0ccb8;
+  border-radius: 0.5em;
+  border-width: 0;
+  color: #4f4d46;
+  margin: 0.3em;
+  padding: 0.5em;
+}
+
+button:hover {
+  background-color: #bdb9a5;
+}
+
+button:active {
+  background-color: #a19d89;
+}
+
+div.fieldsButtonContainer {
+  display: flex;
+}
+
+div.fieldOptionsContainer {
+  border-color: #4f4d46;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0.3em;
+  margin-inline: 0.7em;
+  padding: 0.5em;
+}
+
+p.options {
+  font-size: 80%;
+  margin-block: 0;
+}
+
+ul.options {
+  font-size: 80%;
+  margin-block: 0;
+  padding-bottom: 0.45em;
+  padding-right: 2em;
+}
