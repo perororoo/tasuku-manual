@@ -18,7 +18,7 @@ function FieldsContainer({fields, callback, fieldIndex}: Props) {
         
       ))}  
       </div>    
-      {fields[1].map((field, index) => (
+      {fields[1].map((_field, index) => (
         <div className={fieldIndex === index ? "fieldOptionsContainer": "hidden"} key={index}>
           <p className="nunito-normal default-font options">Options/Accepted Inputs:</p>
           <ul className="options">
