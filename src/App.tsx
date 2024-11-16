@@ -75,14 +75,14 @@ function App() {
     ]
   ]
 
-  const [commandIndex, setCommandIndex] = useState([-1]);
+  const [commandIndex, setCommandIndex] = useState<number[]>([]);
   const [fieldIndex, setFieldIndex] = useState(-1);
+  const [isUpdated, setIsUpdated] = useState(false);
   let openedContainers: number[] = [-1];
   let indexStorage: number;
 
   return (
     <>
-    {console.log(commandIndex)}
       <div>
         <h1 className="default-font nunito-semibold">Tasuku Manual</h1>
         <div className="simpleTextBlock">  
@@ -125,7 +125,7 @@ function App() {
 
                 <div>
                   <p className="nunito-normal default-font"><u>Fields:</u></p>
-                  <FieldsContainer fields={command[2]} callback={setFieldIndex} fieldIndex={fieldIndex} />
+                  <FieldsContainer fields={command[2]} callback={setFieldIndex} callback2={setIsUpdated} fieldIndex={fieldIndex} currentCommand={index} commandsTotal={GlobalCommands.length} isUpdated={isUpdated}/>
                 </div>
                 <div>
                   <p className="nunito-normal default-font"><u>Notes:</u></p>
