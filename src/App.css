@@ -48,3 +48,7 @@ div.hidden {
   font-weight: 600;
   font-style: normal;
 }
+
+p.hidden {
+  display: none;
+}

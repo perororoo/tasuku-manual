@@ -72,7 +72,51 @@ function App() {
         "This command will only work when used inside a forum post.",
         "This command will only work on registered projects with an existing deadline."
       ]
-    ]
+    ],
+    [
+      "/project set reminder",
+      "Sets a reminder for a project!!",
+      [
+        [
+          "interval"
+        ],
+        [
+          [
+            "Weekly - The bot will announce a reminder about the project’s deadline every Sunday, 8am JST.", 
+            "Daily -  The bot will announce a reminder about the project’s deadline everyday, at 8am JST.", 
+            "Remove Reminder - Removes the reminder"
+          ],
+        ],
+      ],
+      [
+        "This command will only work when used inside a forum post.",
+        "This command will only work on registered projects with an existing deadline."
+      ]
+    ],
+    [
+      "/project info",
+      "Use this to show info on the current project!!",
+      [
+        [],
+        [[]],
+      ],
+      [
+        "This command will only work when used inside a forum post. (For now!!)",
+        "This command will only work on registered projects."
+      ]
+    ],
+    [
+      "/database-sync",
+      "Used to synchronize the GDA Office’s Google Sheets database with the bot’s local database",
+      [
+        [],
+        [[]],
+      ],
+      [
+        "This command will work anywhere!!",
+        "You can use this command as a quick fix if something goes wrong, but if it doesn't, please contact Pingu! :D (@peroroo)"
+      ]
+    ],
   ]
 
   const [commandIndex, setCommandIndex] = useState<number[]>([]);
@@ -80,7 +124,7 @@ function App() {
   const [isUpdated, setIsUpdated] = useState(false);
   let openedContainers: number[] = [-1];
   let indexStorage: number;
-
+  
   return (
     <>
       <div>
@@ -96,8 +140,9 @@ function App() {
         <h2 className="default-font nunito-semibold">Global Commands</h2>
           {GlobalCommands.map((command, index) => (
             <div className="commandListBlock" key={`${command}`}>
+              
               <a onClick={() => {
-
+                {console.log(GlobalCommands[index][2][0])}
                 indexStorage = index;
                 openedContainers = commandIndex;
                 
@@ -124,7 +169,7 @@ function App() {
                 <MiniDiscord commandName={`${command[0]}`} fields={command[2][0]} /> 
 
                 <div>
-                  <p className="nunito-normal default-font"><u>Fields:</u></p>
+                  <p className={ GlobalCommands[index][2][0].length != 0 ? "nunito-normal default-font" : "hidden"}><u>Fields:</u></p>
                   <FieldsContainer fields={command[2]} callback={setFieldIndex} callback2={setIsUpdated} fieldIndex={fieldIndex} currentCommand={index} commandsTotal={GlobalCommands.length} isUpdated={isUpdated}/>
                 </div>
                 <div>
