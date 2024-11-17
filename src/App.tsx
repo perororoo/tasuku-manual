@@ -102,7 +102,8 @@ function App() {
       ],
       [
         "This command will only work when used inside a forum post. (For now!!)",
-        "This command will only work on registered projects."
+        "This command will only work on registered projects.",
+        "This command has a bug where if somebody reacts on the forum post while the embed given by the bot is active, it will not update the list of members in the project. You can always redo the command if this happens though!"
       ]
     ],
     [
@@ -114,7 +115,7 @@ function App() {
       ],
       [
         "This command will work anywhere!!",
-        "You can use this command as a quick fix if something goes wrong, but if it doesn't, please contact Pingu! :D (@peroroo)"
+        "You can use this command as a quick fix if something goes wrong (Example: A command not working; Other unexpected behaviors). But if trying this command doesn't fix it, please contact Pingu! :D (@peroroo)"
       ]
     ],
   ]
