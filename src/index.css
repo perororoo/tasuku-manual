@@ -1,14 +1,15 @@
 :root {
-  padding: 10%;
+  margin-block: 5%;
+  margin-inline: 10%;
   place-content: center;
   line-height: 1.5;
-  margin-top: 2em;
 
   color-scheme: light dark;
   background-color: #ede8d0;
 
   font-synthesis: none;
   font-size: 120%;
+  overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
