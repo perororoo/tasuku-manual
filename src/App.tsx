@@ -143,7 +143,6 @@ function App() {
             <div className="commandListBlock" key={`${command}`}>
               
               <a onClick={() => {
-                {console.log(GlobalCommands[index][2][0])}
                 indexStorage = index;
                 openedContainers = commandIndex;
                 
